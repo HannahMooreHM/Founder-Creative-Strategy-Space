@@ -10,8 +10,21 @@ no doc keeps a private dialect. Decided in
 ## Language
 
 **Evidence item**:
-A verbatim quote or checkable fact from the real world, always carrying its source and date.
-_Avoid_: quote bank entry, receipt, trust drip, `[EVIDENCE]`, mined phrase
+A record of something the real world said, in exactly one of three kinds — always
+carrying its kind, source and date. If it came out of our heads it is an Assumption;
+if it came out of the world it is an Evidence item. Nothing else exists.
+_Avoid_: quote bank entry, trust drip, `[EVIDENCE]`, mined phrase
+
+**Customer voice** (kind of Evidence item):
+A verbatim customer quote — review, forum post, interview answer — ≤15 words, with platform and date.
+
+**Checkable fact** (kind of Evidence item):
+A receipt anyone can verify: an award, a rating, a policy, years operating.
+_Avoid_: receipt (in new writing; the strategy docs' "receipt" maps here)
+
+**Observed result** (kind of Evidence item):
+A number the world produced when we poked it — an open rate, a reply rate, a
+pre-order count — always linked to the experiment that produced it.
 
 **Assumption**:
 A belief the strategy leans on, which evidence can support or kill.
