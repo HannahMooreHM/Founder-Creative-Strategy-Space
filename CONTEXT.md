@@ -27,8 +27,18 @@ A number the world produced when we poked it — an open rate, a reply rate, a
 pre-order count — always linked to the experiment that produced it.
 
 **Assumption**:
-A belief the strategy leans on, which evidence can support or kill.
-_Avoid_: scariest belief, riskiest assumption, `[HYPOTHESIS]`, linked belief
+A belief the strategy leans on, born with a falsifier and a blast-radius rank,
+living in one of three states: open → supported / falsified. Falsified assumptions
+never leave the file.
+_Avoid_: scariest belief, riskiest assumption, `[HYPOTHESIS]`, linked belief, validated (use supported)
+
+**Falsifier**:
+The observation that would kill an assumption — "this is wrong if prospects say ___ / do ___".
+An assumption without one is a worry, not an assumption.
+
+**Blast radius**:
+An assumption's rank by "if this is wrong, what collapses?" — it decides attack
+order: experiments aim at the top of the list.
 
 **Strategic reading**:
 The interpretation drafted from the evidence — what we think it means. Not yet approved by the founder.
