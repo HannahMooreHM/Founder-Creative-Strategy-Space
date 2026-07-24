@@ -87,3 +87,25 @@ marked accepted when that ticket closes.
    corpus, so the first experiments don't pretend to appear from nowhere. The
    template's own analogy stands: a lab notebook where the arrow is the
    difference between a scientist's notebook and a diary.
+
+7. **Proposed strategy updates: born from the spine, shaped as diffs, declines
+   kept on file, one at a time.** (a) Born only from a citing chain, never
+   from dictation — normally a Learning's feeds arrow. Hannah's rider: the
+   **founder-hunch lane** keeps conviction moving. A hunch is a belief out of
+   the founder's head, so it enters as an open Assumption (falsifier + blast
+   radius) and may then propose the change immediately, without waiting for an
+   experiment. Conviction is never blocked, only labelled: hunch-backed
+   snapshot text carries assumption-only provenance, and holding up strategy
+   text raises the assumption's blast radius so the next experiment naturally
+   attacks it. (b) Shaped as a diff, not an essay: it names the section, shows
+   before → after, and links its citation; the next snapshot is generated from
+   snapshot + approved delta — one source, many views, as with the version
+   history. (c) Three states: proposed → approved / declined. Approval is a
+   recorded Decision and the only door into a new snapshot version (law since
+   decision 4). Declined updates stay on file, dated, with the founder's
+   reason — the same no-eraser discipline as falsified assumptions, and mined
+   like the review delta for where founder conviction lives. (d) One open
+   update per journey at a time; a second queues — the founder is never shown
+   two competing rewrites of the same section. (e) Declining doesn't reopen
+   the citing learning; a later change of heart is a fresh update citing the
+   same learning — the same pattern as reviving a falsified assumption.

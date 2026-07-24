@@ -91,8 +91,24 @@ read-date choice on an experiment — ship / tweak / kill / rethink, exactly one
 _Avoid_: gate outcome, action (bare), approval (bare)
 
 **Proposed strategy update**:
-The suggested change a learning generates, waiting for founder approval to become the next snapshot version.
-_Avoid_: export changes, §-update
+A diff against the current snapshot — it names the section it touches, shows
+before → after, and cites its origin in the spine: normally a Learning's feeds
+arrow, or in the founder-hunch lane an open Assumption. Never uncited; the
+spine takes no dictation. Three states: proposed → approved / declined.
+Approval is a recorded Decision and the only door into the next snapshot
+version. Declined updates stay on file, dated, with the founder's reason;
+declining never reopens the citing learning — a later change of heart is a new
+update citing the same learning. One open update per journey at a time; a
+second queues.
+_Avoid_: export changes, §-update, edit (bare)
+
+**Hunch** (founder lane into an update):
+A founder belief with no learning behind it. Out of a head, so it enters as an
+Assumption — falsifier, blast radius — and may then propose a strategy change
+immediately, without waiting for an experiment. Conviction is never blocked,
+only labelled: snapshot text a hunch holds up shows assumption-only provenance,
+and holding up strategy text raises the assumption's blast radius, so the next
+experiment aims at it.
 
 ## Notes
 
