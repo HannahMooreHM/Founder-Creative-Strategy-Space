@@ -41,11 +41,19 @@ An assumption's rank by "if this is wrong, what collapses?" — it decides attac
 order: experiments aim at the top of the list.
 
 **Strategic reading**:
-The interpretation drafted from the evidence — what we think it means. Not yet approved by the founder.
+The interpretation drafted from the evidence — what we think it means. A mutable
+draft, one per founder journey at a time, citing evidence items and assumptions
+by link, never by pasted copy. Founder approval freezes it into a Strategy snapshot.
 
 **Strategy snapshot**:
-The strategic reading after founder approval: the current agreed strategy, versioned (v1, v1.1, …).
+The strategic reading after founder approval: immutable, versioned (v1, v1.1, …),
+never edited — only succeeded via an approved Proposed strategy update. Each new
+version opens with a "what changed" line covering only the step from the previous version.
 _Avoid_: strategy document (the premium consultancy deliverable is a different thing), positioning one-pager
+
+**Review delta** (internal, never founder-facing):
+The backstage diff between the reading as drafted and the snapshot as approved —
+mined for what the founder is loving and for gaps the reading should have caught.
 
 **Experiment**:
 One test with one decision metric and a fixed read date. The card and the tracker row are one object, not two.

@@ -37,3 +37,15 @@ marked accepted when that ticket closes.
    each with the implication of choosing it spelled out, plus at least two
    alternative options, so a founder who has never met the concept picks rather
    than invents.
+
+4. **Reading is a mutable draft; approval freezes it into an immutable,
+   append-only snapshot chain.** One reading per journey at a time; founder
+   approval is a recorded Decision that turns it into Strategy snapshot v1; later
+   change happens only as Learning → Proposed strategy update → approval → new
+   version. Aligned with the versioning research: delivered work is never
+   retro-regenerated. Two riders from Hannah: (a) each version's "what changed"
+   line covers only the step from the immediately previous version — no
+   cumulative history bloat; (b) the backstage records the **review delta**
+   (reading-as-drafted vs snapshot-as-approved) and mines it for what the founder
+   loved and what the reading missed — internal-only signal, and seed material
+   for the map's "which orchestrator decisions to encode" fog patch.
