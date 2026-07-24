@@ -65,3 +65,25 @@ marked accepted when that ticket closes.
    "feeds next"; rethink parks for the quarterly review. Incoming numbers file as
    observed-result evidence items. Enforcement is by process in the concierge
    era, by code later.
+
+6. **Learnings keep the ledger's four laws, with the feeds arrow widened and
+   the cold start named.** (a) A learning describes the customer, never the
+   copy — "ICP 2 trades poetry for receipts under time pressure", not "line B
+   won" — the rule that makes learnings compound into a theory of the customer
+   instead of a pile of A/B trivia. (b) The three-part recipe is mandatory:
+   who (one customer type) → what they did (plain words) → what that means
+   they'll do next; anything that can't generate the next move is an
+   observation, not a learning — rewritten until it can. (c) Append-only,
+   forever: no edits, no deletions; a later contradiction gets its own new
+   learning that names the tension — the same no-eraser discipline as the
+   snapshot chain and the falsified-assumptions file. (d) Every learning ends
+   with a **feeds arrow**, widened from the docs: it may name the next
+   experiment, a Proposed strategy update, or explicitly say "end of loop for
+   now" — it never just trails off. In this workspace changing the strategy is
+   the product, so a learning's most important output can be the update
+   itself, not only the next test. (e) One learning per experiment as the
+   rule; the cold start as the exception — the journey's opening beliefs enter
+   as a **seed learning** (the template's L0) drafted from the evidence
+   corpus, so the first experiments don't pretend to appear from nowhere. The
+   template's own analogy stands: a lab notebook where the arrow is the
+   difference between a scientist's notebook and a diary.

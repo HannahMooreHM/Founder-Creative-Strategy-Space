@@ -64,8 +64,25 @@ one object, not two.
 _Avoid_: test, tracker row (as a separate thing from the card)
 
 **Learning**:
-The one-sentence lesson about the customer that a finished experiment leaves behind. Append-only.
+The one-sentence lesson about the customer that a finished experiment leaves
+behind — who (one customer type) → what they did (plain words) → what that
+means they'll do next. It describes the customer, never the copy; if it cannot
+generate the next move it is an observation, not a learning — rewrite until it
+can. Append-only, forever: no edits, no deletions; a later contradiction gets
+its own new learning that names the tension. Every learning ends with a feeds
+arrow. One learning per experiment, with the seed learning as the only exception.
 _Avoid_: ledger entry, lesson, insight
+
+**Feeds arrow** (part of a Learning):
+The mandatory closing pointer on every learning: the next experiment, a
+Proposed strategy update, or an explicit "end of loop for now". A learning
+never just trails off — the arrow is what makes the ledger a lab notebook
+that runs an engine, not a diary.
+
+**Seed learning** (kind of Learning):
+The journey's opening beliefs, drafted from the evidence corpus rather than
+from a finished experiment — the strategy docs' L0 cold-start entry. The only
+learning an experiment didn't produce; it feeds the first experiments.
 
 **Decision**:
 A record of a choice a human made at an approval point: who chose, what, and when.
