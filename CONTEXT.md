@@ -14,46 +14,57 @@ A record of something the real world said, in exactly one of three kinds — alw
 carrying its kind, source and date. If it came out of our heads it is an Assumption;
 if it came out of the world it is an Evidence item. Nothing else exists.
 _Avoid_: quote bank entry, trust drip, `[EVIDENCE]`, mined phrase
+_Founder sees_: **Evidence** — always with its kind label, source and date
 
 **Customer voice** (kind of Evidence item):
 A verbatim customer quote — review, forum post, interview answer — ≤15 words, with platform and date.
+_Founder sees_: "what customers said"
 
 **Checkable fact** (kind of Evidence item):
 A receipt anyone can verify: an award, a rating, a policy, years operating.
 _Avoid_: receipt (in new writing; the strategy docs' "receipt" maps here)
+_Founder sees_: "facts anyone can check"
 
 **Observed result** (kind of Evidence item):
 A number the world produced when we poked it — an open rate, a reply rate, a
 pre-order count — always linked to the experiment that produced it.
+_Founder sees_: "what happened when we tested"
 
 **Assumption**:
-A belief the strategy leans on, born with a falsifier and a blast-radius rank,
+A belief the strategy leans on, born with a falsifier and an impact rank,
 living in one of three states: open → supported / falsified. Falsified assumptions
 never leave the file.
 _Avoid_: scariest belief, riskiest assumption, `[HYPOTHESIS]`, linked belief, validated (use supported)
+_Founder sees_: "a belief we're standing on"
 
 **Falsifier**:
-The observation that would kill an assumption — "this is wrong if prospects say ___ / do ___".
+The observation that would kill an assumption — "this is inaccurate if prospects say ___ / do ___".
 An assumption without one is a worry, not an assumption.
+_Founder sees_: "this is inaccurate if…" — always offered as worked examples to pick from, never a blank prompt
 
-**Blast radius**:
-An assumption's rank by "if this is wrong, what collapses?" — it decides attack
-order: experiments aim at the top of the list.
+**Impact rank**:
+An assumption's rank by "if this is inaccurate, what's the impact — cash,
+customers, brand?" — it decides attack order: experiments aim at the top of the list.
+_Avoid_: blast radius (retired: war metaphor, and "wrong" phrasing), wrong (use inaccurate)
+_Founder sees_: "if this is inaccurate, what's the impact on cash, customers or brand?" — the ranking mechanics stay backstage
 
 **Strategic reading**:
 The interpretation drafted from the evidence — what we think it means. A mutable
 draft, one per founder journey at a time, citing evidence items and assumptions
 by link, never by pasted copy. Founder approval freezes it into a Strategy snapshot.
+_Founder sees_: "our first read of your evidence"
 
 **Strategy snapshot**:
 The strategic reading after founder approval: immutable, versioned (v1, v1.1, …),
 never edited — only succeeded via an approved Proposed strategy update. Each new
 version opens with a "what changed" line covering only the step from the previous version.
 _Avoid_: strategy document (the premium consultancy deliverable is a different thing), positioning one-pager
+_Founder sees_: **Snapshot** — "your strategy, version N" (anchor term, same in both worlds)
 
 **Review delta** (internal, never founder-facing):
 The backstage diff between the reading as drafted and the snapshot as approved —
 mined for what the founder is loving and for gaps the reading should have caught.
+_Founder sees_: nothing — never surfaces
 
 **Experiment**:
 One test with one variable, one decision metric with a pass-mark, a fixed read
@@ -62,6 +73,7 @@ one of four stages: draft → live → read → logged. No peeking before the re
 date; cannot reach logged without its Learning. The card and the tracker row are
 one object, not two.
 _Avoid_: test, tracker row (as a separate thing from the card)
+_Founder sees_: **Experiment** (anchor term, same in both worlds)
 
 **Learning**:
 The one-sentence lesson about the customer that a finished experiment leaves
@@ -72,23 +84,27 @@ can. Append-only, forever: no edits, no deletions; a later contradiction gets
 its own new learning that names the tension. Every learning ends with a feeds
 arrow. One learning per experiment, with the seed learning as the only exception.
 _Avoid_: ledger entry, lesson, insight
+_Founder sees_: **Learning** (anchor term, same in both worlds)
 
 **Feeds arrow** (part of a Learning):
 The mandatory closing pointer on every learning: the next experiment, a
 Proposed strategy update, or an explicit "end of loop for now". A learning
 never just trails off — the arrow is what makes the ledger a lab notebook
 that runs an engine, not a diary.
+_Founder sees_: the "→ Feeds:" arrow, as in the strategy template
 
 **Seed learning** (kind of Learning):
 The journey's opening beliefs, drafted from the evidence corpus rather than
 from a finished experiment — the strategy docs' L0 cold-start entry. The only
 learning an experiment didn't produce; it feeds the first experiments.
+_Founder sees_: "your starting beliefs"
 
 **Decision**:
 A record of a choice a human made at an approval point: who chose, what, and when.
 Includes founder approvals (reading → snapshot, proposed updates) and the
 read-date choice on an experiment — ship / tweak / kill / rethink, exactly one.
 _Avoid_: gate outcome, action (bare), approval (bare)
+_Founder sees_: "your calls"
 
 **Proposed strategy update**:
 A diff against the current snapshot — it names the section it touches, shows
@@ -101,17 +117,30 @@ declining never reopens the citing learning — a later change of heart is a new
 update citing the same learning. One open update per journey at a time; a
 second queues.
 _Avoid_: export changes, §-update, edit (bare)
+_Founder sees_: "suggested change"
 
 **Hunch** (founder lane into an update):
 A founder belief with no learning behind it. Out of a head, so it enters as an
-Assumption — falsifier, blast radius — and may then propose a strategy change
+Assumption — falsifier, impact rank — and may then propose a strategy change
 immediately, without waiting for an experiment. Conviction is never blocked,
 only labelled: snapshot text a hunch holds up shows assumption-only provenance,
-and holding up strategy text raises the assumption's blast radius, so the next
+and holding up strategy text raises the assumption's impact rank, so the next
 experiment aims at it.
+_Founder sees_: **Hunch** (anchor term, same in both worlds)
 
 ## Notes
 
 - **Version** is deliberately not an object: it is a label every strategy snapshot
   carries, like a page number belonging to a book.
-- Founder-facing vocabulary versus these internal terms: to be decided (same ticket).
+- Founder-facing vocabulary: **one ontology, two dress codes**. Every screen
+  label maps 1:1 to an entry here via its "_Founder sees_" line — no
+  founder-only objects, no two objects merged under one friendly label.
+  Experiment, Learning, Snapshot and Hunch are anchor terms spelled the same
+  in both worlds. Founder-facing phrasing prefers positive, descriptive words:
+  "inaccurate", never "wrong".
+- The dress code has a **tunable register**: onboarding captures each
+  founder's communication preferences — learning style, appetite for
+  analogies, depth of explanation — in the founder profile alongside brand
+  colours, and the workspace tunes its explanations to match. The objects
+  never change, only the dress. (Detailed intake questions live with the
+  Progressive intake design ticket.)

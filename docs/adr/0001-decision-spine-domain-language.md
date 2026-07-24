@@ -1,5 +1,5 @@
 ---
-status: proposed
+status: accepted
 ---
 
 # One shared domain language for the decision spine
@@ -11,8 +11,8 @@ item, Assumption, Strategic reading, Strategy snapshot, Experiment, Learning,
 Decision, Proposed strategy update — defined in [CONTEXT.md](../../CONTEXT.md).
 Decided with Hannah in
 [Shared domain language for the decision spine](https://github.com/HannahMooreHM/Founder-Creative-Strategy-Space/issues/4).
-This file records the decisions and trade-offs behind the glossary; it will be
-marked accepted when that ticket closes.
+This file records the decisions and trade-offs behind the glossary; marked
+accepted when that ticket closed (2026-07-24).
 
 ## Decisions
 
@@ -109,3 +109,22 @@ marked accepted when that ticket closes.
    two competing rewrites of the same section. (e) Declining doesn't reopen
    the citing learning; a later change of heart is a fresh update citing the
    same learning — the same pattern as reviving a falsified assumption.
+
+8. **One ontology, two dress codes.** Every founder-facing label maps 1:1 to
+   a canonical object — no founder-only objects, no merging two objects under
+   one friendly label. Labels are plain phrases that teach the concept and
+   pass the 15-year-old test; each object's mapping is recorded on its
+   CONTEXT.md entry as a "Founder sees" line — one home, so no second glossary
+   can drift. Experiment, Learning, Snapshot and Hunch are anchor terms
+   spelled the same in both worlds; the review delta and the ranking mechanics
+   stay backstage. Three riders from Hannah: (a) **blast radius is renamed
+   impact rank** everywhere, internal included — the question is "if this is
+   inaccurate, what's the impact — cash, customers, brand?", concrete
+   dimensions instead of a war metaphor; (b) founder-facing phrasing prefers
+   positive, descriptive words — **"inaccurate", never "wrong"** — so
+   falsifiers surface as "this is inaccurate if…"; (c) the dress code has a
+   **tunable register**: onboarding captures each founder's communication
+   preferences — learning style, appetite for analogies, depth of explanation
+   — in the founder profile alongside brand colours, and the workspace tunes
+   its explanations to match. The objects never change, only the dress; the
+   intake questions themselves route to the Progressive intake design ticket.
