@@ -3,19 +3,23 @@
 
 **How to use:** Paste this entire file into Claude (or any AI with web search). Then provide: your niche, your product in one sentence, your ideal buyer, and 2–4 competitors. The AI runs Phases 1–6 in order.
 
+**Two roles, one engine.** Phases 1–3 and 6 are the **ears** — intake. Their findings feed the shared Evidence Harvest store (defined in `master-prompt-v4.md`); the ears never write to strategy. Phases 4–5 are the **hands** — activation out in the world. The hands only move when the decision layer says so, and every move exits as an `E-VIS` experiment card. The ears judge whether the hands worked; the hands never bless their own work.
+
 ---
 
 ## OPERATING RULES FOR THE AI
 
-1. **Verify or label.** If you have web search, verify every subreddit and thread exists before listing it (search it, confirm the URL). If you cannot verify, output it as `[UNVERIFIED — confirm manually]` with the exact search string the user should run. Never present a guessed thread title or URL as real.
-2. **No astroturfing, ever.** All engagement recommendations must comply with: Reddit's rules and each subreddit's self-promotion rules; disclosure of affiliation when mentioning the user's own product; no fake accounts, no vote manipulation, no incentivized posts. If the user asks for tactics that violate this, refuse that step and offer the compliant alternative. (Undisclosed endorsements can also violate advertising/consumer-protection law, e.g. FTC endorsement guidance.)
+1. **Verify or label.** If you have web search, verify every subreddit and thread exists before listing it (search it, confirm the URL). If you cannot verify, output it as `[HYPOTHESIS — confirm manually]` with the exact search string the user should run. Never present a guessed thread title or URL as real.
+2. **No astroturfing, ever.** All engagement recommendations must comply with: Reddit's rules and each subreddit's self-promotion rules; disclosure of affiliation when mentioning the user's own product; no fake accounts, no vote manipulation, no incentivised posts. If the user asks for tactics that violate this, refuse that step and offer the compliant alternative. (Undisclosed endorsements can also violate advertising/consumer-protection law, e.g. FTC endorsement guidance.)
 3. **Value ratio is non-negotiable.** Recommend a posting pattern of roughly 9 genuinely helpful, non-promotional contributions per 1 mention of the user's product — and product mentions only where they directly answer the question asked.
 4. **Scores are heuristics.** The AI Citation Score below estimates likelihood of being surfaced by AI engines. Present it as an estimate, show the component scores, never as a guarantee.
-5. **Freshness matters.** Prioritize threads from the last 12–18 months; note that engines also cite old evergreen threads that rank in search.
+5. **Freshness matters.** Prioritise threads from the last 12–18 months; note that engines also cite old evergreen threads that rank in search.
 
 ---
 
 ## PHASE 1 — BUYER-QUESTION MAP
+
+*Within the full system, Phases 1–2 run as part of the master prompt's Evidence Harvest: one collection sweep, one provenance-tagged store (source, date, verbatim quote) that both engines read from. No second competing crawl.*
 
 From the user's inputs, generate the question inventory buyers actually type:
 - **Recommendation queries:** "best [category] for [use case]", "alternatives to [competitor]", "[competitor] vs"
@@ -83,7 +87,9 @@ For each Gap Thread (and future live threads), the AI drafts guidance — not co
 
 **Dead-thread rule:** For high-scoring but archived/old threads, do NOT necro-post. Their value is intelligence: they tell you the question to answer on your own site (Phase 5) and the language to use.
 
-The AI drafts 3 example comments per Gap Thread in this framework, in the user's voice, clearly marked as drafts the user must personalize before posting.
+The AI drafts 3 example comments per Gap Thread in this framework, in the user's voice, clearly marked as drafts the user must personalise before posting.
+
+**Every move is an experiment.** Each comment — and each Phase-5 page — ships as an `E-VIS` experiment card: a hypothesis, ONE scored-by metric (fed by the Phase 6 audit), a result source, and a read date on the client's weekly Reading Day. No activation lives outside the experiment tracker.
 
 ---
 
@@ -99,7 +105,7 @@ Take the 10 highest-intent buyer questions (from Phases 1–3) and turn each int
 - FAQ section using the adjacent Phase-1 queries; add FAQ/Article structured data
 - Author byline with real credentials; date; update cadence note
 
-The AI outputs: page title, URL slug, outline, the 80-word answer block drafted, and the comparison-table skeleton for each of the 10 pages. Prioritize by Gap Score of the matching thread.
+The AI outputs: page title, URL slug, outline, the 80-word answer block drafted, and the comparison-table skeleton for each of the 10 pages. Prioritise by Gap Score of the matching thread. Each page ships as an `E-VIS` experiment card (the Phase 4 rule): hypothesis, one scored-by metric from the Phase 6 audit, result source, read date on Reading Day.
 
 ---
 
@@ -110,11 +116,13 @@ The AI outputs: page title, URL slug, outline, the 80-word answer block drafted,
 3. **Attribution:** Watch for "found you on Reddit / asked ChatGPT" in signup surveys and sales calls.
 4. **Prune what fails:** Comments removed by mods = read that sub's rules again before any further posting there. Pages not cited after 90 days = sharpen the direct-answer block and the question-match of the H1.
 
+Audit results land in the evidence store as `[EVIDENCE]` — source, date, verbatim answer. A **visibility opportunity** (a promising subreddit, thread, or question) is formally a *hypothesis about a venue*: it stays `[HYPOTHESIS]` until the audit verifies it, and is never evidence before then.
+
 ---
 
 ## FAILURE MODES THIS WORKFLOW IS BUILT TO PREVENT
 
-1. **Hallucinated threads/subreddits** → verify-or-label rule; every unverified item ships with the manual search string.
+1. **Hallucinated threads/subreddits** → verify-or-label rule; anything not verified ships as `[HYPOTHESIS]` with the manual search string.
 2. **Bans and removed comments** → account readiness, per-sub rule checks, 9:1 ratio, disclosure, no necro-posting.
 3. **Astroturfing / legal exposure** → mandatory affiliation disclosure; honest multi-option answers; refusal of manipulation tactics.
 4. **Fake precision in scoring** → transparent component rubric + Phase 3 verification against real AI answers.

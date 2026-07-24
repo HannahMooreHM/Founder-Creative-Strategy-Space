@@ -59,7 +59,7 @@ SCARIEST-BELIEF TABLE — is the value proposition itself the top unvalidated be
         └─ no  → EXPERIMENT ENGINE
         │
         ▼
-EXPERIMENT ENGINE  ◄────  DELIGHT RADAR (two lenses: ledger scan +
+EXPERIMENT ENGINE  ◄────  DELIGHT COMPASS (two lenses: ledger scan +
 📝 → 🟢 → 🔍 → 📒          Cross-Industry Lens) — output only ever
 SHIP / TWEAK / KILL /      becomes 📝 DRAFT cards in the backlog
 RETHINK
@@ -78,7 +78,7 @@ NEXT STRATEGY VERSION (v1 → v1.1 → v2, with "what changed" line)
 - **Strategy Generator** — upstream in time: always runs first, on existing material. Immediate value, no fifty-question intake.
 - **Value Prop Validation Engine** — upstream in authority, downstream in time: prescribed when the offer itself is the scariest belief; its verdict outranks everything.
 - **Reddit/AI Visibility Engine** — ears at the top (intake → evidence layer), hands at the bottom (activation → `E-VIS` experiment cards with scored-by metrics and read dates). The ears judge whether the hands worked.
-- **Delight Radar** — scans the ledger and quote bank (lens 1) and adjacent/other industries via the Cross-Industry Lens (lens 2). Suggestions must cite evidence; they enter the backlog as 📝 DRAFT cards and never jump the queue.
+- **Delight Compass** — scans the ledger and quote bank (lens 1) and adjacent/other industries via the Cross-Industry Lens (lens 2). Suggestions must cite evidence; they enter the backlog as 📝 DRAFT cards and never jump the queue.
 
 ---
 
@@ -135,7 +135,7 @@ Every noun in the system sits on one rung. Only experiments and stamped judgment
 | **Validated value** | A thing customers already validate in reviews (formerly "proposition value", template §2) |
 | **Emotional hook** | The feeling that makes action urgent — tested separately from the value proposition |
 | **Identity claim** | Who the buyer believes the choice makes them |
-| **Scariest belief** | The belief whose failure would collapse most of the strategy — attacked first |
+| **Scariest belief** | The belief whose failure would collapse most of the strategy — tested first |
 | **Experiment** | A controlled action testing one belief: one variable, one metric, one read date |
 | **Prediction** | The winner committed before launch — being wrong is the valuable outcome |
 | **Pass-mark** | The threshold fixed before results are visible |
@@ -152,4 +152,33 @@ Every noun in the system sits on one rung. Only experiments and stamped judgment
 | **Evidence Harvest** | The single unified collection sweep both engines read from |
 | **Strategy version** | A published snapshot of current beliefs and decisions (v1 → v1.1 → v2) |
 
-**Retired words:** "REVISE" and "iterate" (→ TWEAK) · "proposition value" (→ validated value) · "unvalidated" and "[UNVERIFIED]" as distinct labels (→ `[HYPOTHESIS]`).
+## Glossary — craft terms
+
+The words the method uses when doing the strategy work itself. Same rule: this table is the dictionary; the strategy template is the phrasebook — it may *simplify* these meanings in place, never contradict them.
+
+| Term | Plain meaning |
+|---|---|
+| **Onliness** | The sentence "we're the only ___ that ___", finished with checkable facts |
+| **The zag** | When the whole category turns right, you turn left — scale what only you can scale |
+| **8-word test** | If the onliness won't compress to ≤8 words, it isn't an onliness yet |
+| **Tomorrow Test** | Could the market leader say this line tomorrow? If yes, it's a label, not a position |
+| **Trust drip** | One small checkable fact; enough drips fill the trust bucket — you never claim, you accumulate |
+| **Sleeper Receipt** | The receipt the market leader *cannot* copy because their business model forbids it |
+| **The remarkable thing** | The specific, slightly surprising fact customers retell at dinner |
+| **Quote bank** | The store of verbatim customer quotes mined by the Evidence Harvest |
+| **Evidence strata** | The six kinds of quote the bank must cover: emotional extreme · daily tax · category core failure · learned distrust · transformation sought · persistent residue |
+| **Voice rules** | The customer's dialect goes in; company jargon stays out (formally: register rules) |
+| **Comfort language** | Technical terms customers themselves use — precision reads as care; keep them |
+| **Gate test / gate moment** | Would a customer say the line aloud at the real place the decision happens? That place must be evidenced, never imagined |
+| **Outlier file** | Logged posts that massively beat their account's normal numbers — what the audience rewards |
+| **Packaging first** | Hook, title and thumbnail decided before the content exists; no good cover → don't write the book |
+| **Hook** | The first line/three seconds; its only job is to earn the next line — and it must pay off honestly |
+| **Answer box** | The dashed box holding a question only the client can answer, with why-we-ask in grey |
+| **"In one line" (Minto)** | The one-sentence conclusion under every heading; the boxes alone tell the whole strategy |
+| **Borrow File** | The cross-industry borrowings section (template §6.8) — evidenced theme → other industry's solution → draft card |
+| **Delight Compass** | The two-lens suggestion engine: ledger scan + Cross-Industry Lens; output only ever becomes draft cards |
+| **Challenger Pass** | The pre-delivery quality gate: a rival strategist's voice hunts for what the document missed |
+| **E-VIS card** | An experiment card for a visibility action (a comment, a content page) — no activation lives outside the tracker |
+| **The backlog** | Where draft cards wait their turn — borrowings and suggestions enter here, never the first-3 queue |
+
+**Retired words:** "REVISE" and "iterate" (→ TWEAK; gates once written PROCEED / REVISE / KILL now read PROCEED / TWEAK / KILL) · "proposition value" (→ validated value) · "unvalidated" and "[UNVERIFIED]" as distinct labels (→ `[HYPOTHESIS]`) · "Delight Radar" (→ Delight Compass) · "Red-Team Pass" (→ Challenger Pass).

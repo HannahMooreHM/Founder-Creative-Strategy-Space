@@ -39,9 +39,17 @@
 
 **D16 · Result-source field now, automation later.** Every experiment card names where its result lives (email platform, analytics, ad manager) so a future agent knows where to fetch. Automated result-fetching and agentic reminders are Stage-2 backlog by design — not built before the pilots prove the method.
 
-**D17 · The Cross-Industry Lens.** The Delight Radar gains a second lens: evidenced ICP themes → scan other industries solving the same theme → propose borrowings conversationally, teaching the founder why. Named thinker: Rory Sutherland. Guardrails: every borrowing cites its theme, enters as `[HYPOTHESIS]`, exits only as a 📝 DRAFT card in the backlog, offered at natural moments (post-close or quarterly), never jumping the queue. *Reason: strategy must not become only retrospective cumulative learning; this is the licensed entrance for newness — and a differentiator competitors can't copy tomorrow.*
+**D17 · The Cross-Industry Lens.** The Delight Compass gains a second lens: evidenced ICP themes → scan other industries solving the same theme → propose borrowings conversationally, teaching the founder why. Named thinker: Rory Sutherland. Guardrails: every borrowing cites its theme, enters as `[HYPOTHESIS]`, exits only as a 📝 DRAFT card in the backlog, offered at natural moments (post-close or quarterly), never jumping the queue. *Reason: strategy must not become only retrospective cumulative learning; this is the licensed entrance for newness — and a differentiator competitors can't copy tomorrow.*
 
 **D18 · Process rule.** Any design decision touching the source documents must cite the specific sections affected in each document and check for cross-document overlap before proposing. (Encoded in CLAUDE.md; born from two catches Hannah made that the process missed.)
+
+**D19 · The system speaks in positive archetypal language.** Hunting/war/enemy metaphors are replaced across all documents: Delight Radar → Delight Compass · "enemy distrust" → "learned distrust" · Red-Team Pass → Challenger Pass · "order of attack" → "order of testing" · "adversarial" → "challenging"/"sceptical" · "blast radius" → plain words ("how much collapses if this is wrong"). Deliberately kept, pending Hannah's veto: KILL and kill criteria (a clean decisive cut), "scariest belief", SHIP/TWEAK/RETHINK. *Reason: language shapes how founders feel inside the method; the system challenges beliefs, it does not wage war on them.*
+
+**D20 · Documents stay token-lean; outputs teach simply.** A token-efficiency pass tightened wording without removing any rule, example or teaching box; future edits keep this discipline. All explanations to Hannah and to founders use simple language and analogies — the existing 15-year-old test, applied to conversation too.
+
+**D21 · One dictionary, one phrasebook.** The complete glossary (canonical + craft terms) lives in CONTEXT.md — the dictionary, the single binding copy. The strategy template is the phrasebook: it teaches each term in place, may simplify but never contradict. No separate GLOSSARY.md, so nothing can drift. *Reason: two copies of a dictionary always drift apart.*
+
+**D22 · The comments pass.** For every social link supplied, the Evidence Harvest reads the comment sections themselves — the client's own posts, competitor posts, and outlier posts. Comments are first-person voice attached to the exact content that provoked it; on an outlier, they explain *why* it outperformed. Added as pass 3 of the harvest cascade. *Reason: it's gold panned from a river the client already marked on the map.*
 
 ---
 
@@ -50,6 +58,6 @@
 Grill each source document against CONTEXT.md and these decisions, one at a time, updating them in place:
 1. `master-prompt-v4.md` — Evidence Harvest merge · vocabulary renames · judgment gates surfaced · Cross-Industry Lens generation step · result-source field · Cadence/Reading Day rules
 2. `strategy-template-v4.md` — vocabulary renames · judgment stamps · gates · lens output section
-3. `experiment-engine-build-prompt.md` — Cadence enforcement · Delight Radar second lens · result-source field · vocabulary
+3. `experiment-engine-build-prompt.md` — Cadence enforcement · Delight Compass second lens · result-source field · vocabulary
 4. `value-prop-validation-engine.md` — TWEAK rename · ladder labels · prescribed-by-pipeline framing · Segment/ICP relationship
 5. `reddit-ai-visibility-engine.md` — ears/hands split interfaces · harvest reader role · E-VIS card exits · vocabulary
