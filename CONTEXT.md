@@ -56,7 +56,11 @@ The backstage diff between the reading as drafted and the snapshot as approved �
 mined for what the founder is loving and for gaps the reading should have caught.
 
 **Experiment**:
-One test with one decision metric and a fixed read date. The card and the tracker row are one object, not two.
+One test with one variable, one decision metric with a pass-mark, a fixed read
+date and a committed predicted winner — all set before launch. Lives in exactly
+one of four stages: draft → live → read → logged. No peeking before the read
+date; cannot reach logged without its Learning. The card and the tracker row are
+one object, not two.
 _Avoid_: test, tracker row (as a separate thing from the card)
 
 **Learning**:
@@ -65,6 +69,8 @@ _Avoid_: ledger entry, lesson, insight
 
 **Decision**:
 A record of a choice a human made at an approval point: who chose, what, and when.
+Includes founder approvals (reading → snapshot, proposed updates) and the
+read-date choice on an experiment — ship / tweak / kill / rethink, exactly one.
 _Avoid_: gate outcome, action (bare), approval (bare)
 
 **Proposed strategy update**:

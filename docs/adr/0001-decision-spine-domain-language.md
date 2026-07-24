@@ -48,4 +48,20 @@ marked accepted when that ticket closes.
    cumulative history bloat; (b) the backstage records the **review delta**
    (reading-as-drafted vs snapshot-as-approved) and mines it for what the founder
    loved and what the reading missed — internal-only signal, and seed material
-   for the map's "which orchestrator decisions to encode" fog patch.
+   for the map's "which orchestrator decisions to encode" fog patch. A further
+   rider: each snapshot's delta line links to a **full version history** view —
+   always generated from the snapshot chain, never hand-maintained as a separate
+   changelog (one source, many views). The history page itself is built with the
+   MVP surface screens (issue #22).
+
+5. **Experiments adopt the Engine's enforced lifecycle wholesale.** Four stages
+   (draft → live → read → logged; the status pills stay as founder-facing dress)
+   and three laws: commit before launch (one variable, one metric + pass-mark,
+   read date, predicted winner), no peeking before the read date, and no
+   Learning, no closure. The read-date choice — ship / tweak / kill / rethink,
+   exactly one — is recorded in the Decision drawer, not as a private field, so
+   every consequential fork in a journey is one query. Kill marks the attacked
+   assumption falsified; tweak clones with a citation to its parent; ship follows
+   "feeds next"; rethink parks for the quarterly review. Incoming numbers file as
+   observed-result evidence items. Enforcement is by process in the concierge
+   era, by code later.
