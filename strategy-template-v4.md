@@ -19,7 +19,11 @@
 
 **Stacked numbering rule** — every numbered sequence renders as a vertical list, 1 above 2 above 3. Never an inline run ("1 · x 2 · y"): if the order matters enough to number, it matters enough to stack.
 
-**Lens badges** — small tags like `NEUMEIER` `RIES` `GALLOWAY` mark whose method a rule comes from. When two ideas conflict, the badge tells you which book to reopen.
+**Lens badges** — small tags like `NEUMEIER` `RIES` `GALLOWAY` `SUTHERLAND` mark whose method a rule comes from. When two ideas conflict, the badge tells you which book to reopen.
+
+**Two labels only** — every claim in this document is either `[EVIDENCE]` (a verified observation with a source) or `[HYPOTHESIS]` (an interpretation not yet earned — everything AI-generated starts here). There is no third label; older tags like "unvalidated" mean `[HYPOTHESIS]`.
+
+**🖋 Judgment stamp** — a strategist's call that changed the strategy without an experiment. Every stamp shows its reasoning, a confidence level, and the future test that could kill it — and all stamps are collected in the §9.2 register. Visible on purpose: transparency is the brand.
 
 **Experiment status pills** — every experiment in §6 and Appendix A carries exactly one status:
 📝 `DRAFT` (designed, not launched) → 🟢 `LIVE` (running, don't peek) → 🔍 `READ` (results in, decision pending) → 📒 `LOGGED` (learning written to the ledger — only now is it finished).
@@ -115,7 +119,7 @@
 ## 2 · Review mining — what customers already validate `SCAMAN`
 *Purpose: find the marketing your customers have already written for you, word for word.*
 
-*Method: auto-searched corpus (Google reviews, Trustpilot, Reddit, [category review sites], first-person customer blogs) + the client's private evidence. Every value below carries a verbatim quote ≤15 words with platform + date, or is tagged `unvalidated — hypothesis only`. Every validated value must get a visible answer on the site.*
+*Method: the Evidence Harvest (one collection sweep per client — see master prompt) + the client's private evidence. Every value below carries a verbatim quote ≤15 words with platform + date, or is tagged `[HYPOTHESIS]`. Every validated value must get a visible answer on the site.*
 
 **The table below is a floor, not a ceiling.** Six rows are the minimum; keep adding rows until the corpus is exhausted. The corpus must cover these strata — if any stratum has no quote, that is a research gap to log, not a row to skip:
 - **the emotional extreme** (the worst moment customers describe — tears, dread, giving up)
@@ -127,7 +131,9 @@
 
 **Corpus quality line (mandatory):** end this section by stating the corpus's own weakness in one sentence (e.g. "zero first-party quotes — the first ten customer emails outrank everything above; harvest them relentlessly"). Rank sources: first-person customer voice > practitioner/enthusiast blogs > journalists & aggregators > competitor marketing (always tagged).
 
-| # | Proposition value (principle) | Customer's own words | Applied where |
+**⚑ Judgment gate — contradictory evidence:** if two strata point opposite ways (e.g. reviews praise speed while forums curse it), log both, proceed with the better-evidenced reading stamped 🖋 — and signpost it: this is a moment where a strategist would weigh what the system can't.
+
+| # | Validated value (principle) | Customer's own words | Applied where |
 |---|---|---|---|
 | 1 | **Rare-in-market differentiator** — customers set it against the whole category | "[quote]" (platform, yr) | headline claim |
 | 2 | **The deciding fact** — what settles it for the evidence-driven buyer | "[quote]" | first "Why" card |
@@ -143,7 +149,7 @@
 **✅ To-do — Evidence**
 - [ ] Run the auto-search across all listed platforms; log quotes with source + date
 - [ ] Identify the customer-recognised brand feature (or record that none exists yet)
-- [ ] Tag every unproven value `unvalidated`; add to open-questions list
+- [ ] Tag every unproven value `[HYPOTHESIS]`; add to open-questions list
 - [ ] Map each validated value to a named site element
 
 ---
@@ -156,7 +162,7 @@
 - **[Canvas]** — [signal] · **[Warmth]** — [where allowed] · **[Action colour]** — one job: clickability · **[USP colour]** — reserved for the customer-recognised feature · **[Accent]** — stats and ratings only.
 - **Decisions this opens up:** [photography brief] · [feature → logo lockup?] · [live review widget vs curated wall] · [remaining choices].
 
-**Logo semantics ruling (mandatory).** Beyond sampling its colours, rule on what the mark *depicts and signals*: [what is it? what does it say about the category promise? does it survive the gate test — would the customer at the gate moment feel it matches the stakes?]. If the mark's meaning conflicts with the positioning (e.g. a playful mascot on a safety-critical brand), log it as a strategic decision to make deliberately — keep-and-own, evolve, or replace — never leave it unruled.
+**Logo semantics ruling (mandatory).** Beyond sampling its colours, rule on what the mark *depicts and signals*: [what is it? what does it say about the category promise? does it survive the gate test — would the customer at the gate moment feel it matches the stakes?]. If the mark's meaning conflicts with the positioning (e.g. a playful mascot on a safety-critical brand), log it as a strategic decision to make deliberately — keep-and-own, evolve, or replace — never leave it unruled. **⚑ Judgment gate — positioning conflict:** a meaning conflict here is one of the six strategist moments; the system proposes a default and stamps it 🖋, and the ruling deserves a human in the room.
 
 **Asset Placement Audit (mandatory).** List the client's 3–5 strongest assets (founder story, sleeper receipt, killer policy, best proof), then for each: *where it currently lives → where the buying decision needs it → the move order.* An asset buried in an About page or FAQ accordion is inventory, not marketing. Format:
 
@@ -255,7 +261,8 @@ Before writing any experiment, list the beliefs the whole strategy leans on, the
 | **Hypothesis** | "If [change], then [metric] moves, because [ICP insight]" |
 | **Cells** | A (control = incumbent line) / B / C |
 | **Decision metric** | ONE metric + threshold + minimum sample/duration — vanity metrics banned |
-| **Read date** | fixed *before* launch — no peeking, no early calls |
+| **Result source** | the named place the number will be fetched from (email platform, analytics, ad manager) — so anyone (or, later, an agent) knows where to look |
+| **Read date** | fixed *before* launch, set to the first **Reading Day** after the sample matures — no peeking, no early calls |
 | **Expected winner** | committed before running — being wrong is the valuable outcome |
 | **Learning written** | the ledger sentence this will produce, whichever cell wins |
 
@@ -333,12 +340,35 @@ A "[incumbent]" *(control)* · B "[same insight, guilt/friction removed]" — is
 3. Every entry ends with a **"→ Feeds:"** arrow naming the experiment (or §-update) it sets up. An entry with no arrow is unfinished.
 4. A learning that can't generate the next hypothesis is only an observation — rewrite it until it can.
 
-**Quarterly: the pivot-or-persevere meeting `RIES`.** Read the ledger top to bottom and count:
+**Quarterly: the pivot-or-persevere meeting `RIES`.** **⚑ Judgment gate** — this meeting is the recurring strategist venue. Read the ledger top to bottom and count:
 1. **Three consistent entries about one ICP** → update that ICP's definition in §4 (*persevere, sharper*).
 2. **Three contradicting entries** → the ICP or the positioning is wrong; change one **deliberately** (*rethink/pivot*) rather than drifting.
 3. **That's the loop:** evidence → experiment → ledger → sharper ICP → sharper experiments.
 
 > 💡 **In plain English:** the ledger is a lab notebook, and the "→ Feeds" arrow is what makes it an engine instead of a diary. Scientists don't trust memory and neither should marketers — the notebook is what turns ten scattered results into one compounding theory. The quarterly meeting exists because there are only two honest responses to evidence: double down on purpose, or change course on purpose. Drifting is the only wrong answer.
+
+### 6.8 · The Borrow File — cross-industry borrowings `SUTHERLAND`
+*Purpose: let newness into the strategy through the front door — so learning compounds forwards, not only backwards.*
+
+**In one line: take the theme the evidence says matters most to the ICP, find another industry that solves the same feeling brilliantly, and propose the borrowing as a draft experiment the founder can choose.**
+
+Every strategy risks becoming only "retrospective cumulative learning" — always sharpening what worked, never leaping. This section is the licensed entrance for the leap. Rules:
+
+1. **The theme must be evidenced.** Start from a theme the quote bank actually supports (e.g. *trust*, *feeling seen*, *decision fatigue*) — prioritised by what matters most to the primary ICP. No theme, no borrowing.
+2. **Look where the industry isn't looking.** Find 1–2 brands in *other* industries that solve the same theme for the same human feeling (a dating app's trust problem → how fintech builds trust rituals; a nursery's reassurance problem → how airlines narrate turbulence).
+3. **Teach the founder why, in plain words:** *"Your ICP's evidenced theme is [theme]. Look what [brand] does in [industry]: [what they do]. You could try [adaptation]."*
+4. **Offer the choice, never force it:** *"Explore this, or stay focused on your existing experiments?"* Borrowings enter Appendix A as 📝 DRAFT cards **in the backlog** — they cite their theme in "Builds on", carry `[HYPOTHESIS]`, and never jump the first-3 queue. Newness enters through choice at natural moments (an experiment just closed, or the quarterly) — never mid-experiment.
+
+| # | Evidenced theme (quote-bank ref) | Borrowed from | What they do | Proposed adaptation | Card |
+|---|---|---|---|---|---|
+| 1 | [theme] ("[quote]", platform, yr) | [brand, industry] | [their move] | [what to try here] | `E-BOR-01 · 📝 backlog` |
+| 2 | [theme] | [brand, industry] | [their move] | [what to try here] | `E-BOR-02 · 📝 backlog` |
+
+**⚑ Judgment gate — vision & creative direction:** choosing which borrowing fits the brand's story is one of the six strategist moments — the machine assembles options; composing them into one coherent vision is human work.
+
+> 💡 **In plain English:** when trains felt unbearable, the answer wasn't a faster train — it was a departure board. The problem was never speed; it was uncertainty. Other industries have already spent fortunes solving the exact feeling your customer has; borrowing their move costs you an afternoon. And a competitor can copy any single borrowed tactic tomorrow — but not the habit of finding them from your customers' own evidence.
+
+> 🎓 **Teaching moment — Rory Sutherland:** value lives in perception. A problem that looks unsolvable as an engineering problem is often cheap to solve as a psychology problem — so before spending more on the message or the product, ask what the customer is actually *feeling*, and look sideways at who else has made that feeling wonderful.
 
 **✅ To-do — Experiments**
 - [ ] Fill the riskiest-assumption table (6.1) and rank it
@@ -346,8 +376,9 @@ A "[incumbent]" *(control)* · B "[same insight, guilt/friction removed]" — is
 - [ ] Fill one hero card per ICP with committed expected winners and read dates
 - [ ] Build subject + hook cards, each citing a "Builds on" entry and (for social) an outlier
 - [ ] Start the outlier file; design the first repeatable format (`E-FMT-01`)
-- [ ] Create the ledger with an L0 entry; diarise the quarterly pivot-or-persevere meeting
-- [ ] Copy every card into the Appendix A worksheet before launch
+- [ ] Generate 1–2 cross-industry borrowings (§6.8), each citing its evidenced theme
+- [ ] Create the ledger with an L0 entry; diarise the quarterly pivot-or-persevere meeting and the weekly Reading Day
+- [ ] Copy every card into the Appendix A worksheet before launch — result source and Reading Day read date filled
 
 ---
 
@@ -413,6 +444,24 @@ Before the document ships, adopt the voice of a rival strategist paid to embarra
 5. **The satisficing check:** for every table in this document that was filled to exactly its template row-count, confirm the corpus was exhausted — or add rows.
 A document that skips this pass is a draft, whatever its title says.
 
+### 9.2 · THE JUDGMENT STAMPS REGISTER *(every side-door call, in one place)*
+*Purpose: make every strategist judgment visible, honest, and killable — the side-door has a guest book.*
+
+**In one line: any change to the strategy that didn't come through an experiment is listed here, with its reasoning, its confidence, and the test that could kill it.**
+
+The constitution (CONTEXT.md) allows exactly one way past the evidence loop: a strategist's judgment call, stamped 🖋. This register collects every stamp in the document — like the answers-needed panel, everything in one place, one sitting. An empty register is fine; a hidden stamp is a defect.
+
+| 🖋 | Where (section) | The call made | Reasoning | Confidence | The test that could kill it |
+|---|---|---|---|---|---|
+| 1 | [§] | [what was decided on judgment] | [why — in plain words] | [low / medium / high] | [the future experiment, by ID if drafted] |
+
+**Register rules:**
+1. Every 🖋 stamp in the body appears here, one-to-one — and nowhere else may a non-experiment change touch the strategy.
+2. A stamp with no named future test is unfinished — it's an opinion wearing a lab coat. Name the test or remove the change.
+3. **⚑ Judgment gate — side-door use:** every entry in this register is, by definition, a strategist moment.
+
+> 💡 **In plain English:** sometimes the evidence is thin but the business still needs a direction — waiting is also a decision, and often the worst one. This table is how the strategy stays honest about those moments: it says "a human judged this, here's why, and here's what would prove them wrong." Trust isn't built by never guessing; it's built by labelling the guesses.
+
 ---
 
 ## APPENDIX A · EXPERIMENT TRACKER *(one row per experiment, kept live)*
@@ -421,22 +470,23 @@ A document that skips this pass is a draft, whatever its title says.
 **In one line: this is the training log — if a row is blank the experiment isn't real yet, and when a row finishes, the "What do I run next?" guide below tells you mechanically what to launch next.**
 
 ### A.1 · How to use it — four steps, no exceptions
-1. **Before launch:** copy the card from §6 into a row. Write down which cell you *predict* will win, and — crucially — write the **read date** now (the calendar day you'll judge the result). Choosing the judging day *before* you see any numbers is what stops wishful early calls ("peeking").
-2. **At launch:** fill in the launch date, flip the status to 🟢 LIVE — then don't touch the row until the read date. Not even a peek.
+1. **Before launch:** copy the card from §6 into a row. Write down which cell you *predict* will win, the **result source** (the named place the number will come from), and — crucially — the **read date** now: the first **Reading Day** after the sample matures. Choosing the judging day *before* you see any numbers is what stops wishful early calls ("peeking").
+2. **At launch:** the Cadence rule (CONTEXT.md) applies — the row may only flip to 🟢 LIVE once its Reading Day follow-up has an **owner and a calendar appointment** (create the invite at launch). An experiment without a follow-up appointment isn't launched, it's abandoned in advance. Then fill in the launch date, flip to 🟢 LIVE — and don't touch the row until the read date. Not even a peek.
 3. **On the read date:** write the actual number next to the pass-mark, flip to 🔍 READ, and pick **exactly one** of four actions (see A.3). One. Picking two means you haven't decided.
 4. **To close:** write the one-sentence lesson in the ledger (§6.7), copy its ID (e.g. `L4`) into this row, flip to 📒 LOGGED. **No ledger ID = not finished** — the experiment officially never happened.
 
 ### A.2 · The tracker
 
-| ID | Status | ICP | Bet (one line) | Scored by + pass-mark | Sample / time | Predicted winner | Launched | Read date | Actual result | Action (ship / tweak / kill / rethink) | Ledger ID | Feeds next |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| *WORKED EXAMPLE (a Dubai nursery — study this row, then delete it):* E-SUBJ-01 | 📒 | ICP 2 | Receipts beat curiosity for time-poor parents | open rate ≥ 30% | 800 sends / 48h | C (curiosity) | 03 Mar | 05 Mar | **B (receipt) won: 34% vs C 26%** | SHIP — B's frame rolls out | L3 | E-HERO-02 now leads with the receipt, per L3 |
-| E-SUBJ-01 | 📝 | ICP 1 | | open rate ≥ [x]% | [n] sends / 48h | | | | | | | E-HERO-01 |
-| E-HERO-01 | 📝 | ICP 1 | | [CTA action] ≥ [x]% | [n] visits / [x] wks | | | | | | | |
-| E-SOC-01 | 📝 | ICP 1 | | hold rate ≥ [x]% | [n] impressions | | | | | | | |
-| E-FMT-01 | 📝 | [_] | | [retention metric] | [n] consecutive weeks | | | | | | | |
-| E-FEES-01 | 📝 | [_] | | [metric] ≥ [x] | [n] / [x] wks | | | | | | | |
-| | | | | | | | | | | | | |
+| ID | Status | ICP | Bet (one line) | Scored by + pass-mark | Result source | Sample / time | Predicted winner | Launched | Read date | Actual result | Action (ship / tweak / kill / rethink) | Ledger ID | Feeds next |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| *WORKED EXAMPLE (a Dubai nursery — study this row, then delete it):* E-SUBJ-01 | 📒 | ICP 2 | Receipts beat curiosity for time-poor parents | open rate ≥ 30% | email platform | 800 sends / 48h | C (curiosity) | 03 Mar | 05 Mar (Reading Day) | **B (receipt) won: 34% vs C 26%** | SHIP — B's frame rolls out | L3 | E-HERO-02 now leads with the receipt, per L3 |
+| E-SUBJ-01 | 📝 | ICP 1 | | open rate ≥ [x]% | [email platform] | [n] sends / 48h | | | | | | | E-HERO-01 |
+| E-HERO-01 | 📝 | ICP 1 | | [CTA action] ≥ [x]% | [site analytics] | [n] visits / [x] wks | | | | | | | |
+| E-SOC-01 | 📝 | ICP 1 | | hold rate ≥ [x]% | [platform insights] | [n] impressions | | | | | | | |
+| E-FMT-01 | 📝 | [_] | | [retention metric] | [platform insights] | [n] consecutive weeks | | | | | | | |
+| E-FEES-01 | 📝 | [_] | | [metric] ≥ [x] | [___] | [n] / [x] wks | | | | | | | |
+| E-BOR-01 *(backlog — §6.8 borrowing, enters by choice)* | 📝 | [_] | | [metric] ≥ [x] | [___] | [n] / [x] wks | | | | | | | |
+| | | | | | | | | | | | | | |
 
 *Reading the worked example, start to finish: the bet was written and the read date fixed **before** launch (steps 1–2) · the prediction (C) turned out wrong — that's fine, being wrong is the valuable outcome · on the read date the real numbers went in and ONE action was chosen (SHIP) · the lesson went to the ledger as L3 ("ICP 2 trades poetry for receipts under time pressure") · and the "Feeds next" cell says exactly how L3 changes the next experiment. That row is a finished experiment. A row missing any of those cells isn't.*
 
@@ -448,15 +498,15 @@ On the read date, compare the actual result to the pass-mark, then pick your act
    1. Roll the winning line out everywhere its channel lives.
    2. **Next experiment = the one named in this row's "Feeds next" cell**, updated to inherit the winner (e.g. the subject-line winner's *frame* — receipts vs feelings vs curiosity — becomes the leading cell of the next, more expensive test).
    3. Write the ledger entry; its "→ Feeds" arrow and this row's "Feeds next" cell must agree.
-2. **Results were close, muddy, or the sample was too small? → TWEAK** *(a.k.a. iterate)*.
+2. **Results were close, muddy, or the sample was too small? → TWEAK.**
    1. Copy this row into a fresh row with a new ID (E-SUBJ-01 → E-SUBJ-02).
    2. Change **exactly one thing** (a sharper line, a bigger sample, a cleaner audience) — everything else stays identical.
    3. In the new row's "Bet", cite this row: "builds on E-SUBJ-01 / L[n]". Launch again.
-3. **Every cell lost — the belief behind the test looks wrong? → KILL.**
+3. **Every cell lost — the belief behind the test looks wrong? → KILL.** *(⚑ Judgment gate: killing a belief is a strategist moment — cheap tests can self-serve, but a KILL deserves a human in the room.)*
    1. Go to the scariest-belief table (§6.1) and mark that belief **falsified** with the date and ledger ID.
    2. **Next experiment = whatever now sits at the top of the §6.1 table** — the new scariest belief inherits the attack.
    3. Celebrate briefly: a KILL just stopped you building a website, an email sequence and an ad budget on a false floor. Log it with the same care as a win.
-4. **The result attacks the strategy itself (wrong customer? wrong positioning?) → RETHINK** *(a.k.a. pivot)*.
+4. **The result attacks the strategy itself (wrong customer? wrong positioning?) → RETHINK** *(a.k.a. pivot)*. *(⚑ Judgment gate: same as KILL — this verdict is a strategist moment.)*
    1. Don't launch anything that depends on the challenged belief.
    2. Park it, marked ⚠, for the quarterly pivot-or-persevere meeting (§6.7) — strategy changes are made deliberately in that room, never mid-week in a spreadsheet.
    3. Meanwhile, run experiments from untouched branches of the §6.1 table.
@@ -464,9 +514,10 @@ On the read date, compare the actual result to the pass-mark, then pick your act
 **The 15-year-old check, applied to this page:** given any completed row, you should be able to answer "what do we run next?" using only (a) the Action column, (b) this guide, and (c) either the "Feeds next" cell (SHIP), a copy of the row (TWEAK), or the §6.1 table (KILL). If you can't, the row is missing a cell — fill it before moving on.
 
 ### A.4 · Tracker rules
-1. **One row = one experiment = one changed thing = one score.** If a row needs two metrics to look good, split it into two experiments.
-2. **Read dates are appointments, not suggestions.** Moving one after launch requires a written reason in the row.
-3. **Every KILL is a win** — it saved you building on a false belief (§6.1). Log it with the same care as a ship.
-4. **Review cadence:** scan this sheet weekly (anything past its read date?) · reconcile it against the ledger monthly (every 📒 row has a ledger ID; every ledger arrow has a row) · feed it into the quarterly pivot-or-persevere meeting.
+1. **The Cadence: no LIVE without a bell.** A row may only go 🟢 once its Reading Day follow-up has an owner and a calendar appointment (invite created at launch). A rule with no bell attached is a hope.
+2. **One row = one experiment = one changed thing = one score.** If a row needs two metrics to look good, split it into two experiments.
+3. **Read dates are appointments, not suggestions.** Every read date falls on a **Reading Day** — the fixed weekly ritual where all matured experiments are read, decided, and logged in one sitting (one ritual, not scattered pings). Moving a read date after launch requires a written reason in the row.
+4. **Every KILL is a win** — it saved you building on a false belief (§6.1). Log it with the same care as a ship.
+5. **Reading Day cadence:** scan this sheet every Reading Day (anything past its read date?) · reconcile it against the ledger monthly (every 📒 row has a ledger ID; every ledger arrow has a row) · feed it into the quarterly pivot-or-persevere meeting.
 
 > 💡 **In plain English:** this appendix is the difference between a gym plan and a training log. §6 is the plan; this page is where you record what you actually lifted, when, and — via the decision guide — what you'll lift next session. Plans impress; logs compound. And the guide exists so "what next?" is never a debate: the tracker answers it for you.
